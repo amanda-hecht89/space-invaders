@@ -1,1 +1,36 @@
-/* add home page styles here */
+/* add home page styles here */.grid {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 228, 196, 0.574);
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+}
+
+.invader {
+    background-color: green;
+    border-radius: 20px;
+}
+
+body {
+    background-image: url("../assets/road.jpg");
+}
+
+.shooter {
+    background-color: rgb(57, 104, 159);
+}
+
+.laser {
+    background-color: red;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+.boom {
+    background-color: yellow;
+}
