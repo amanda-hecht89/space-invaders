@@ -8,6 +8,7 @@ let invaderId;
 let goingRight = true;
 let invadersRemoved = [];
 const pewAudio = new Audio ('../assets/laser.mp3');
+let results = 0;
 
 window.addEventListener('boom', () => {
     pewAudio.play();
@@ -30,8 +31,6 @@ function draw() {
     for (let i = 0; i < invaders.length; i++) {
         if (!invadersRemoved.includes(i)) {
             squares[invaders[i]].classList.add('invader');
-            
-            
         }
     } 
 } draw();
@@ -93,6 +92,11 @@ function moveInvaders() {
             clearInterval(invaderId);
         }
     }
+
+    if (invadersRemoved.legnth === invaders.length) {
+        resultsDisplay.innerHTML = 'You Win';
+        clearInterval(invaderId);
+    }
 }
 invaderId = setInterval(moveInvaders, (400));
 
@@ -114,6 +118,8 @@ function shoot(e) {
             
             const invaderRemoval = invaders.indexOf(currentLaserIndex);
             invadersRemoved.push(invaderRemoval);
+            results++;
+            resultsDisplay.innerHTML = results;
             
 
 
