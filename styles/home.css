@@ -15,7 +15,9 @@
 .invader {
     background-color: green;
     border-radius: 20px;
+    /* background-image: url("../assets/zombie.png"); */
 }
+
 
 body {
     background-image: url("../assets/road.jpg");
@@ -23,14 +25,17 @@ body {
 
 .shooter {
     background-color: rgb(57, 104, 159);
+    /* background-image: url("../assets/shooter.png"); */
 }
 
 .laser {
     background-color: red;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    /* background-image: url("../assets/laserBeam.png"); */
 
 }
 .boom {
     background-color: yellow;
+    /* background-image: url("../assets/RIP.png"); */
 }
