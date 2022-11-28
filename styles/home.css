@@ -18,9 +18,17 @@
     /* background-image: url("../assets/zombie.png"); */
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
 
 body {
     background-image: url("../assets/road.jpg");
+    display: flex;
+    justify-content: center;
 }
 
 .shooter {
