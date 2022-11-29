@@ -9,9 +9,15 @@ let goingRight = true;
 let invadersRemoved = [];
 const pewAudio = new Audio ('../assets/laser.mp3');
 let results = 0;
+const startGame = document.querySelector('.start');
 
 window.addEventListener('boom', () => {
     pewAudio.play();
+});
+
+startGame.addEventListener('click', () => {
+    window.location.reload();
+
 });
 
 for (let i = 0; i < 225; i++) {

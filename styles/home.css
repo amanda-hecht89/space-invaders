@@ -13,9 +13,12 @@
 }
 
 .invader {
-    background-color: green;
+    /* background-color: green; */
     border-radius: 20px;
-    /* background-image: url("../assets/zombie.png"); */
+    background-image: url("../assets/zombie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .flex {
@@ -32,18 +35,27 @@ body {
 }
 
 .shooter {
-    background-color: rgb(57, 104, 159);
-    /* background-image: url("../assets/shooter.png"); */
+    /* background-color: rgb(57, 104, 159); */
+    background-image: url("../assets/shooter.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .laser {
-    background-color: red;
+    /* background-color: red; */
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    /* background-image: url("../assets/laserBeam.png"); */
+    background-image: url("../assets/laserBeam.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 .boom {
-    background-color: yellow;
-    /* background-image: url("../assets/RIP.png"); */
+    /* background-color: yellow; */
+    background-image: url("../assets/RIP.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
